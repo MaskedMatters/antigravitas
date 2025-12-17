@@ -44,9 +44,7 @@ All data is stored in `data/trainApp.json`:
 
 ## Admin Access
 
-Login with:
-- Username: `admin`
-- Password: `admin`
+Just click login to admin dashboard, the login page is not really a thing.
 
 ## Technologies
 
