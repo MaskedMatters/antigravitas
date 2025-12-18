@@ -1,0 +1,173 @@
+{
+    "brands": [
+        {
+            "id": 1,
+            "name": "Melon Metro",
+            "emoji": "🥐"
+        },
+        {
+            "id": 2,
+            "name": "Edemami Express",
+            "emoji": "🍣"
+        },
+        {
+            "id": 3,
+            "name": "Taco Train",
+            "emoji": "🌮"
+        },
+        {
+            "id": 4,
+            "name": "Raspberry Rails",
+            "emoji": " 🍓"
+        },
+        {
+            "id": 5,
+            "name": "Cookie Commutes",
+            "emoji": "🍪"
+        }
+    ],
+    "lines": [
+        {
+            "id": 1,
+            "brandId": 1,
+            "name": "Red Line",
+            "color": "#ff695e",
+            "stopIds": [1, 2, 3],
+            "segments": [[1, 2], [1, 5], [7, 5], [7, 2], [1, 2]]
+        },
+        {
+            "id": 2,
+            "brandId": 4,
+            "name": "Blue Line",
+            "color": "#5ebcff",
+            "stopIds": [1, 4, 5],
+            "segments": [[1, 5], [2, 6], [7, 6]]
+        }
+    ],
+    "stops": [
+        {
+            "id": 1,
+            "name": "Central Station",
+            "color": "#84ff5e",
+            "coord": [1, 5]
+        },
+        {
+            "id": 2,
+            "name": "Pineapple Plaza",
+            "color": "#fffc5e",
+            "coord": [4, 5]
+        },
+        {
+            "id": 3,
+            "name": "Banana Boulevard",
+            "color": "#ffd75e",
+            "coord": [7, 3]
+        },
+        {
+            "id": 4,
+            "name": "Blueberry Bay",
+            "color": "#5e79ff",
+            "coord": [4, 6]
+        },
+        {
+            "id": 5,
+            "name": "Grape Gardens",
+            "color": "#b95eff",
+            "coord": [7, 6]
+        }
+    ],
+    "schedules": [
+        {
+            "lineId": 1,
+            "type": "loop",
+            "flow": [
+                {
+                    "step": 1,
+                    "stopId": 1,
+                    "arrival": "16:15",
+                    "departure": "06:00"
+                },
+                {
+                    "step": 2,
+                    "stopId": 2,
+                    "arrival": "06:15",
+                    "departure": "07:00"
+                },
+                {
+                    "step": 3,
+                    "stopId": 3,
+                    "arrival": "07:15",
+                    "departure": "16:00"
+                }
+            ]
+        },
+        {
+            "lineId": 2,
+            "type": "p2p",
+            "flow": [
+                {
+                    "step": 1,
+                    "stopId": 1,
+                    "arrival": null,
+                    "departure": "12:30"
+                },
+                {
+                    "step": 2,
+                    "stopId": 4,
+                    "arrival": "12:45",
+                    "departure": "13:00"
+                },
+                {
+                    "step": 3,
+                    "stopId": 5,
+                    "arrival": "13:15",
+                    "departure": "17:20"
+                },
+                {
+                    "step": 4,
+                    "stopId": 4,
+                    "arrival": "17:35",
+                    "departure": "17:50"
+                },
+                {
+                    "step": 5,
+                    "stopId": 1,
+                    "arrival": "18:05",
+                    "departure": null
+                }
+            ]
+        }
+    ],
+    "map": {
+        "grid": [
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        ],
+        "key": {
+            "0": {
+                "type": "Land",
+                "color": "#76ab57"
+            },
+            "1": {
+                "type": "Land Alt.",
+                "color": "#f5cf5f"
+            },
+            "2": {
+                "type": "Water",
+                "color": "#247eb5"
+            },
+            "3": {
+                "type": "Water Alt.",
+                "color": "#51856c"
+            }
+        }
+    }
+}
